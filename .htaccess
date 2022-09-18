@@ -1,0 +1,5 @@
+RewriteEngine On
+# On va ajouter une condition à notre réécriture.
+RewriteCond %{REQUEST_URI} !(\.png|\.jpg|\.gif|\.jpeg|\.svg|\.css|\.js|\.ico|\.php)$
+# Rediriger tous les autres vers l'index.php
+RewriteRule (.*) index.php [QSA,L]

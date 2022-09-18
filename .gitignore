@@ -1,0 +1,8 @@
+_captacha.php
+_mailer.php
+_accConfig.php
+_pdo.php
+*.jpg
+*.png
+*.webp
+vendor

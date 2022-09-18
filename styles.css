@@ -1,0 +1,222 @@
+ *,::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: rgba(185, 250, 240, 0.34);
+    width: 100vw;
+    height: 100vh; 
+}
+#logo{
+    margin-top: 1vh;
+    margin-left:3vw;
+    width: 50px; 
+    height: 50px;
+}
+
+h1{
+    position: relative;
+    top :-5vh;
+    text-align: center;
+    color: rgb(9, 14, 17);
+}
+header{
+    text-decoration: underline;
+     height: 10vh; 
+    }
+#nav-debut{
+      display: none;
+    }   
+    .container-m{
+        display: contents;
+        background-color: black;
+      
+      }
+    
+      .nav-bar {
+        background-color: black;
+        position: fixed;
+        background-color: rgba(12, 12, 12, 0.75);
+        width: 100%;
+        top: 0;
+        right: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 11;
+      }
+    
+      .toggle {
+        left: 0;
+       
+      }
+    
+      .toggle-menu {
+        position: fixed;
+        top: 2vh;
+        right: 2vw;
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2px 2px 2px 3px;
+        border-radius: 5px;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+    
+      .line {
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        background-color: rgb(6, 227, 161);
+        transition: transform 0.2s ease-out;
+        -webkit-transition: transform 0.2s ease-out;
+        -moz-transition: transform 0.2s ease-out;
+        -ms-transition: transform 0.2s ease-out;
+        -o-transition: transform 0.2s ease-out;
+      }
+    
+      .toggle .line1 {
+        background-color: rgb(251, 8, 8);
+        transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
+      }
+    
+      .toggle .line2 {
+        display: none;
+      }
+    
+      .toggle .line3 {
+        background-color: rgb(250, 7, 7);
+        transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
+      }
+      .nav-list {
+        list-style: none;
+        width: 100%;
+        margin-bottom: 200px;
+      }
+      .nav-list-item {
+        text-align: center;
+      }
+      .fin{
+        top: 2vh;
+      }
+      .nav-link {
+        color: rgb(9, 253, 139);
+        font-size: 18px;
+        text-decoration: none;
+      }
+     
+main{
+    align-content: center;
+}
+p{ 
+  margin: 1vh;
+  text-align: justify;
+}
+h3{
+    text-decoration:underline; 
+    padding-top: 2vw;
+    text-align:left;
+    margin-left: 1vh;
+}
+h2{
+  text-decoration: underline;
+  padding-top: 2vw;
+  text-align: center;
+}
+h4{
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+h5{
+  font-size: 1rem;
+  color:rgb(10, 70, 248)
+}
+img{
+    display: block;
+    margin: auto;
+    width: 40vh; 
+    height: 25vh;
+}
+
+#nav-fin{
+  display: none;
+}
+/* carousel */
+.container {
+  width: 60vw;
+  position: relative;
+  margin: auto;
+  
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.container .item {
+  width: 100%;
+  height: 100%;
+  display: none;
+
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(13, 25, 240);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+
+  to {
+      opacity: 1
+  }
+}
+.error{
+  color: red;
+  border-color: red;
+}
+#capt, #chat{
+  text-align: center;
+}
+
+
